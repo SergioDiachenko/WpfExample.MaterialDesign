@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfExample.MaterialDesign"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="450" Width="800"
+        mc:Ignorable="d" Height="600" Width="1024"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
     <Grid Background="#FFEEEEEE" MouseDown="Grid_MouseDown">
         <StackPanel>
@@ -81,5 +81,90 @@
                 </StackPanel>
             </Grid>
         </StackPanel>
+        <Grid
+            Width="250"
+            HorizontalAlignment="Left"
+            Background="#FF222222">
+            <ListView Margin="0 100" Foreground="LightGray" FontFamily="Champagne &amp; Limousines">
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Home" 
+                                                 Width="30" 
+                                                 Height="30"
+                                                 VerticalAlignment="Center"
+                                                 Margin="5"/>
+                        <TextBlock Text="Hello" 
+                                   FontSize="26" 
+                                   VerticalAlignment="Center" 
+                                   Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="FoodForkDrink" 
+                                                 Width="30" 
+                                                 Height="30"
+                                                 VerticalAlignment="Center"
+                                                 Margin="5"/>
+                        <TextBlock Text="Hello" 
+                                   FontSize="26" 
+                                   VerticalAlignment="Center" 
+                                   Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="FormatListBulleted" 
+                                                 Width="30" 
+                                                 Height="30"
+                                                 VerticalAlignment="Center"
+                                                 Margin="5"/>
+                        <TextBlock Text="Hello" 
+                                   FontSize="26" 
+                                   VerticalAlignment="Center" 
+                                   Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="TruckDelivery" 
+                                                 Width="30" 
+                                                 Height="30"
+                                                 VerticalAlignment="Center"
+                                                 Margin="5"/>
+                        <TextBlock Text="Hello" 
+                                   FontSize="26" 
+                                   VerticalAlignment="Center" 
+                                   Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Cash" 
+                                                 Width="30" 
+                                                 Height="30"
+                                                 VerticalAlignment="Center"
+                                                 Margin="5"/>
+                        <TextBlock Text="Hello" 
+                                   FontSize="26" 
+                                   VerticalAlignment="Center" 
+                                   Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Home" 
+                                                 Width="30" 
+                                                 Height="30"
+                                                 VerticalAlignment="Center"
+                                                 Margin="5"/>
+                        <TextBlock Text="Hello" 
+                                   FontSize="26" 
+                                   VerticalAlignment="Center" 
+                                   Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+        </Grid>
     </Grid>
 </Window>
