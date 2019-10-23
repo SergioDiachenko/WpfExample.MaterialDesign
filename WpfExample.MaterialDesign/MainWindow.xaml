@@ -4,9 +4,46 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfExample.MaterialDesign"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d" Height="450" Width="800"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
-    <Grid>
-        
+    <Grid Background="#FFEEEEEE">
+        <StackPanel>
+            <Grid Background="#FF0069C0" Height="10"/>
+            <Grid Margin="5">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0">
+                    <Button 
+                        Width="30" 
+                        Height="30"
+                        Background="{x:Null}"
+                        BorderBrush="{x:Null}" 
+                        Padding="0"
+                        Foreground="Gray">
+                        <materialDesign:PackIcon Kind="BellOutline" />
+                    </Button>
+                        <Button 
+                        Width="30" 
+                        Height="30"
+                        Background="{x:Null}"
+                        BorderBrush="{x:Null}" 
+                        Padding="0"
+                        Foreground="Gray"
+                        Margin="0 0 10 0">
+                        <materialDesign:PackIcon Kind="Settings" />
+                    </Button>
+                    <Button 
+                        x:Name="ButtonFechar"
+                        Width="30" 
+                        Height="30"
+                        Background="{x:Null}"
+                        BorderBrush="{x:Null}" 
+                        Padding="0"
+                        Foreground="Gray"
+                        Click="ButtonFechar_Click">
+                        <materialDesign:PackIcon Kind="Power" />
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>
