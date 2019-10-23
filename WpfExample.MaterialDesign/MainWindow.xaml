@@ -85,7 +85,25 @@
             Width="250"
             HorizontalAlignment="Left"
             Background="#FF222222">
-            <ListView Margin="0 100" Foreground="LightGray" FontFamily="Champagne &amp; Limousines">
+            <materialDesign:TransitioningContent 
+                x:Name="TransitioningContentSlide"
+                OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+                <Grid 
+                    x:Name="GridCursor"
+                    Margin="0 100 0 0"
+                    Background="#FF0069C0" 
+                    Width="10" 
+                    HorizontalAlignment="Left" 
+                    Height="60"
+                    VerticalAlignment="Top">
+                </Grid>
+            </materialDesign:TransitioningContent>
+            <ListView 
+                x:Name="ListViewMenu" 
+                Margin="0 100" 
+                Foreground="LightGray" 
+                FontFamily="Champagne &amp; Limousines"
+                SelectionChanged="ListViewMenu_SelectionChanged">
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" 

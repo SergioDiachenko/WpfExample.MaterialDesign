@@ -34,5 +34,17 @@ namespace WpfExample.MaterialDesign
         {
             DragMove();
         }
+
+        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = ListViewMenu.SelectedIndex;
+            MoveCursorMenu(index);
+        }
+
+        private void MoveCursorMenu(int index)
+        {
+            TransitioningContentSlide.OnApplyTemplate();
+            GridCursor.Margin = new Thickness(0, (100 + (60 * index)), 0, 0);
+        }
     }
 }
